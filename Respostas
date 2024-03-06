@@ -1,0 +1,62 @@
+# Solu-es-Est-gio-Ribeir-o-Preto-
+Respostas das questões sobre o Estágio em Ribeirão Preto na Target Sistemas 
+
+1 ---> O resultado da variavel SOMA será SOMA = 91
+
+2 -- Código abaixo:
+
+           function verificaFibonacci(numero) {
+                              let a = 0;
+                              let b = 1;
+                              let temp;
+                              while (b < numero) {
+                                  temp = a;
+                                  a = b;
+                                  b = temp + b;
+                              }
+                              if (b === numero) {
+                                  return true;
+                              } else {
+                                  return false;
+                              }
+                          }
+                
+                let numero = parseInt(prompt("Informe um número:"));
+                
+                if (verificaFibonacci(numero)) {
+                    console.log("O número " + numero + " pertence à sequência de Fibonacci.");
+                } else {
+                    console.log("O número " + numero + " não pertence à sequência de Fibonacci.");
+                }
+
+3 ---> Respostas:
+       
+       a) 8 (Adiciona-se 2 ao número anterior)
+       b) 128 (multiplica-se o número anterior por 2) 
+       c) 36 (eleva-se o número ao quadrado, por ex: o numero é 6 então será 6^2 = 36)
+       d) 64 (O próximo número par é elevado ao quadrado, ex: o próximo é 10 então 10^2 = 100)
+       e) 13 (Sequência fibonacci)
+       f) 200 (Todos os números começam com a letra D)
+
+4 ---> Resposta:
+
+           Ligar o primeiro interuptor e aguardar um pouco
+           Desligar o primeiro e ligar o segundo interruptor
+           Ir até a primeira sala e verificar se:
+              A lâmpada está acesa: Segundo Interruptor
+              A lâmpada está apagada e fria: terceiro interruptor 
+              A lâmpada está apagada e morna/quente: primeiro interruptor
+          depois iria até a proxima sala e faria a mesma verificação 
+          a terceira seria a última opção restante, então não seria preciso ir até ela
+
+  5 ---> Código abaixo
+  
+         let StringNormal = "Target Sistemas"; 
+          let StringInvertida = "";
+  
+          for (let i = inputString.length - 1; i >= 0; i--) {
+          StringInvertida += StringNormal[i];
+        }
+  
+            console.log("String original: " + StringNormal);
+            console.log("String invertida: " + StringInvertida);
